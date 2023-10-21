@@ -607,13 +607,13 @@ async def send_all(bot, userid, files, ident):
         else:
             pre = 'checksub' 
         btn = [[
-                InlineKeyboardButton("❆ Jᴏɪɴ Oᴜʀ Bᴀᴄᴋ-Uᴘ Cʜᴀɴɴᴇʟ ❆", url=invite_link.invite_link)
+                InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
             ],[
-                InlineKeyboardButton("↻ Tʀʏ Aɢᴀɪɴ", callback_data=f"{pre}#send_all")
+                InlineKeyboardButton("🔄 Try Again", callback_data=f"{pre}#send_all")
             ]]
         await bot.send_message(
             chat_id=userid,
-            text="**Yᴏᴜ ᴀʀᴇ ɴᴏᴛ ɪɴ ᴏᴜʀ Bᴀᴄᴋ-ᴜᴘ ᴄʜᴀɴɴᴇʟ ɢɪᴠᴇɴ ʙᴇʟᴏᴡ sᴏ ʏᴏᴜ ᴅᴏɴ'ᴛ ɢᴇᴛ ᴛʜᴇ ᴍᴏᴠɪᴇ ғɪʟᴇ...\n\nIғ ʏᴏᴜ ᴡᴀɴᴛ ᴛʜᴇ ᴍᴏᴠɪᴇ ғɪʟᴇ, ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ '❆ Jᴏɪɴ Oᴜʀ Bᴀᴄᴋ-Uᴘ Cʜᴀɴɴᴇʟ ❆' ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴀɴᴅ ᴊᴏɪɴ ᴏᴜʀ ʙᴀᴄᴋ-ᴜᴘ ᴄʜᴀɴɴᴇʟ, ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ '↻ Tʀʏ Aɢᴀɪɴ' ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ...\n\nTʜᴇɴ ʏᴏᴜ ᴡɪʟʟ ɢᴇᴛ ᴛʜᴇ ᴍᴏᴠɪᴇ ғɪʟᴇs...**",
+            text="**You Are Not In Our Update Channel Given Below So You Don't Get The Movies File...\n\nIf You Want The Movies File, Click On The '🤖 Join Updates Channel' Button Below And Join Our Update Channel, Then Click On The '🔄 Try Again' Button Below...\n\nThen You Will Get The Movies Files...**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
@@ -621,12 +621,12 @@ async def send_all(bot, userid, files, ident):
     
     if IS_VERIFY and not await check_verification(bot, userid):
         btn = [[
-            InlineKeyboardButton("Vᴇʀɪғʏ", url=await get_token(bot, userid, f"https://telegram.dog/{temp.U_NAME}?start=", 'send_all')),
-            InlineKeyboardButton("Hᴏᴡ Tᴏ Vᴇʀɪғʏ", url=HOW_TO_VERIFY)
+            InlineKeyboardButton("✅Verify✅", url=await get_token(bot, userid, f"https://telegram.dog/{temp.U_NAME}?start=", 'send_all')),
+            InlineKeyboardButton("How To Verify", url=HOW_TO_VERIFY)
         ]]
         await bot.send_message(
             chat_id=userid,
-            text="<b>Yᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ!\nKɪɴᴅʟʏ ᴠᴇʀɪғʏ ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ Sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ ɢᴇᴛ ᴀᴄᴄᴇss ᴛᴏ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏᴠɪᴇs ᴜɴᴛɪʟ 12 ʜᴏᴜʀs ғʀᴏᴍ ɴᴏᴡ !</b>",
+            text="<b>You Are Not Verified!\nKindly Verify To Continue So That You Can Get Access To Unlimited Movies Until 12 Hours From Now!</b>",
             protect_content=True if PROTECT_CONTENT else False,
             reply_markup=InlineKeyboardMarkup(btn)
         )
@@ -655,12 +655,10 @@ async def send_all(bot, userid, files, ident):
                 reply_markup=InlineKeyboardMarkup(
                     [
                     [
-                        InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK)
+                        InlineKeyboardButton('❤️‍🔥Support Group❤️‍🔥', url=GRP_LNK)
                     ],[
-                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                    ],[
-                        InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/skcontactbot")
-                      ]
+                        InlineKeyboardButton('💖Update Channel💖', url=CHNL_LNK)
+                    ]
                     ]
                 )
             )
