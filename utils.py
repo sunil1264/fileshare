@@ -654,12 +654,13 @@ async def send_all(bot, userid, files, ident):
                 protect_content=True if ident == "filep" else False,
                 reply_markup=InlineKeyboardMarkup(
                     [
-                        [
-                        InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
+                    [
+                        InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK)
+                    ],[
                         InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                     ],[
-                        InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/creatorbeatz")
-                        ]
+                        InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/skcontactbot")
+                      ]
                     ]
                 )
             )
