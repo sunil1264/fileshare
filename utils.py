@@ -626,7 +626,7 @@ async def send_all(bot, userid, files, ident):
         ]]
         await bot.send_message(
             chat_id=userid,
-            text="<b>You Are Not Verified!\nKindly Verify To Continue So That You Can Get Access To Unlimited Movies Until 12 Hours From Now!</b>",
+            text="<b>You Are Not Verified!\nKindly Verify To Continue So That You Can Get Access To Unlimited Movies Until 24 Hours From Now!</b>",
             protect_content=True if PROTECT_CONTENT else False,
             reply_markup=InlineKeyboardMarkup(btn)
         )
