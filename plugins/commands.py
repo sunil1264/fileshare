@@ -252,7 +252,7 @@ async def start(client, message):
                 ]]
                 await verify_user(client, userid, token)
                 await message.reply_text(
-                    text=f"<b>Hey {message.from_user.mention}, You Are Successfully Verified !\nNow You Have Unlimited Access For All Movies Til The Next 12 Hours From Now.</b>",
+                    text=f"<b>Hey {message.from_user.mention}, You Are Successfully Verified !\nNow You Have Unlimited Access For All Movies Till The Next 24 Hours From Now.</b>",
                     protect_content=True if PROTECT_CONTENT else False,
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
@@ -261,7 +261,7 @@ async def start(client, message):
                 InlineKeyboardButton("Get File", url=f"https://telegram.dog/{temp.U_NAME}?start=files_{fileid}")
             ]]
             await message.reply_text(
-                text=f"<b>Hey {message.from_user.mention}, You Are Successfully Verified !\nNow You Have Unlimited Access For All Movies Til The Next 12 Hours From Now.</b>",
+                text=f"<b>Hey {message.from_user.mention}, You Are Successfully Verified !\nNow You Have Unlimited Access For All Movies Till The Next 24 Hours From Now.</b>",
                 protect_content=True if PROTECT_CONTENT else False,
                 reply_markup=InlineKeyboardMarkup(btn)
             )
@@ -283,7 +283,7 @@ async def start(client, message):
                     InlineKeyboardButton("How To Verify", url=HOW_TO_VERIFY)
                 ]]
                 await message.reply_text(
-                    text="<b>You Are Not Verified!\nKindly Verify To Continue So That You Can Get Access To Unlimited Movies Until 12 Hours From Now!</b>",
+                    text="<b>You Are Not Verified!\nKindly Verify To Continue So That You Can Get Access To Unlimited Movies Until 24 Hours From Now!</b>",
                     protect_content=True if PROTECT_CONTENT else False,
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
@@ -333,7 +333,7 @@ async def start(client, message):
             InlineKeyboardButton("How To Verify", url=HOW_TO_VERIFY)
         ]]
         await message.reply_text(
-            text="<b>You Are Not Verified!\nKindly Verify To Continue So That You Can Get Access To Unlimited Movies Until 12 Hours From Now!</b>",
+            text="<b>You Are Not Verified!\nKindly Verify To Continue So That You Can Get Access To Unlimited Movies Until 24 Hours From Now!</b>",
             protect_content=True if PROTECT_CONTENT else False,
             reply_markup=InlineKeyboardMarkup(btn)
         )
