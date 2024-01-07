@@ -541,7 +541,7 @@ async def advantage_spoll_choker(bot, query):
                                     k = await query.message.reply_text(script.MVE_NT_FND)
                                     await asyncio.sleep(10)
                                     await k.delete()
-  '''      else:
+        '''else:
             _, user, movie_ = query.data.split('#')
             movies = SPELL_CHECK.get(query.message.reply_to_message.id)
             if not movies:
