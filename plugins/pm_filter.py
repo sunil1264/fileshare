@@ -512,7 +512,7 @@ async def select_language(bot, query):
 async def advantage_spoll_choker(bot, query):
     if chat_type == enums.ChatType.PRIVATE:
         _, user, movie_ = query.data.split('#')
-        movies = SPELL_CHECK.get(query.message.reply_to_message)
+        movies = SPELL_CHECK.get(query.message.reply_to_message.id)
         if not movies:
             return await query.answer(script.OLD_ALRT_TXT.format(query.from_user.first_name), show_alert=True)
             if int(user) != 0 and query.from_user.id != int(user):
