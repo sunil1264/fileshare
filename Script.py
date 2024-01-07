@@ -11,10 +11,10 @@ class script(object):
 ✯ 𝐋𝐀𝐍𝐆𝐔𝐀𝐆𝐄: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
 ✯ 𝐃𝐀𝐓𝐀 𝐁𝐀𝐒𝐄: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
 ✯ 𝐁𝐎𝐓 𝐒𝐄𝐑𝐕𝐄𝐑: 𝙷𝙴𝚁𝙾𝙺𝚄
-✯ 𝐁𝐔𝐈𝐋𝐃 𝐒𝐓𝐔𝐓𝐀𝐒: v1.0.1 [ 𝙱𝙴𝚃𝙰 ]"""
+✯ 𝐁𝐔𝐈𝐋𝐃 𝐒𝐓𝐔𝐓𝐀𝐒: v3.0.1 [ 𝙱𝙴𝚃𝙰 ]"""
     SOURCE_TXT = """<b>NOTE:</b>
 - I am not a open source project. 
-- Source - <b>@SKMovies_Request</b>  
+# - Source - <b>@SKMovies_Request</b>  
 
 <b>DEVS:</b>
 - <a href=https://t.me/skcontactbot>𝐒𝐔𝐍𝐈𝐋 𝐊𝐔𝐌𝐀𝐑</a>"""
