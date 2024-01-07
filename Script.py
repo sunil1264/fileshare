@@ -1,6 +1,7 @@
 class script(object):
     START_TXT = """𝐇𝐞𝐥𝐥𝐨 {},
 𝐌𝐲 𝐍𝐚𝐦𝐞 𝐈𝐬 <a href=https://t.me/{}>{}</a>, 𝐈 𝐂𝐀𝐍 𝐏𝐑𝐎𝐕𝐈𝐃𝐄 𝐌𝐎𝐕𝐈𝐄𝐒 & 𝐖𝐄𝐁 𝐒𝐄𝐑𝐈𝐄𝐒, 𝐉𝐔𝐒𝐓 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 𝐀𝐍𝐃 𝐄𝐍𝐉𝐎𝐘 😍
+𝐇𝐨𝐰 𝐓𝐨 𝐔𝐬𝐞 𝐌𝐞:- <a href=https://telegram.dog/moviehub1753/57>𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞</a>
 𝐌𝐲 𝐆𝐫𝐨𝐮𝐩:- <b>@SK_Movies1_Group</b>"""
     HELP_TXT = """𝐇𝐄𝐘 {}
 𝐇𝐄𝐑𝐄 𝐈𝐒 𝐓𝐇𝐄 𝐇𝐄𝐋𝐏 𝐅𝐎𝐑 𝐌𝐘 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒."""
