@@ -510,7 +510,7 @@ async def select_language(bot, query):
 
 @Client.on_callback_query(filters.regex(r"^spol"))
 async def advantage_spoll_choker(bot, query):
-    if query.message.chat.type == "private":
+    if query.message.chat.type == "":
         _, user, movie_ = query.data.split('#')
         movies = SPELL_CHECK.get(query.message.reply_to_message.id)
         if not movies:
