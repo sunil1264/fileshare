@@ -108,7 +108,7 @@ Name - {}
 
     ALRT_TXT = """Hello {},
 This Not Your Movie Request,
-Request Your's ..."""
+Reques..."""
 
     OLD_ALRT_TXT = """Hey {},
 You Are Using My One Of The Old Massage, 
