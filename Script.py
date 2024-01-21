@@ -114,12 +114,12 @@ Reques..."""
 You Are Using My One Of The Old Massage, 
 Please Sean The Request Again."""
 
-    CUDNT_FND = """ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏᴛʜɪɴɢ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ {}
+    CUDNT_FND = """ɪ ᴄᴏᴜʟᴅ ɴoᴛ ꜰɪɴᴅ ᴀɴʏᴛʜɪɴɢ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ {}
 ᴅɪᴅ ʏᴏᴜ ᴍᴇᴀɴ ᴀɴʏ ᴏɴᴇ ᴏꜰ ᴛʜᴇꜱᴇ?"""
 
     I_CUDNT = """<b>Sorry</b>"""
 
-    I_CUD_NT = """I Counldn't Find Your Movie {}.
+    I_CUD_NT = """I Counld not Find Your Movie {}.
 Please Check Your Spelling On Google..."""
 
     MVE_NT_FND = """Movie Not Found In Database..."""
