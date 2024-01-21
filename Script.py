@@ -1,8 +1,6 @@
 class script(object):
-    START_TXT = """𝐇𝐞𝐥𝐥𝐨 {},
-𝐌𝐲 𝐍𝐚𝐦𝐞 𝐈𝐬 <a href=https://t.me/{}>{}</a>, 𝐈 𝐂𝐀𝐍 𝐏𝐑𝐎𝐕𝐈𝐃𝐄 𝐌𝐎𝐕𝐈𝐄𝐒 & 𝐖𝐄𝐁 𝐒𝐄𝐑𝐈𝐄𝐒, 𝐉𝐔𝐒𝐓 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 𝐀𝐍𝐃 𝐄𝐍𝐉𝐎𝐘 😍
-𝐇𝐨𝐰 𝐓𝐨 𝐔𝐬𝐞 𝐌𝐞:- <a href=https://telegram.dog/moviehub1753/57>𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞</a>
-𝐌𝐲 𝐆𝐫𝐨𝐮𝐩:- <b>@SK_Movies1_Group</b>"""
+    START_TXT = """Hello {},
+my name is <a href=https://t.me/{}>{}</a>, I am a file share bot😍"""
     HELP_TXT = """𝐇𝐄𝐘 {}
 𝐇𝐄𝐑𝐄 𝐈𝐒 𝐓𝐇𝐄 𝐇𝐄𝐋𝐏 𝐅𝐎𝐑 𝐌𝐘 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒."""
     ABOUT_TXT = """✯ 𝐌𝐘 𝐍𝐀𝐌𝐄: {}
@@ -95,11 +93,9 @@ This module only works for my admins
 • /broadcast - <code>to broadcast a message to all users</code>"""
     STATUS_TXT = """★ 𝐓𝐨𝐭𝐚𝐥 𝐅𝐢𝐥𝐞𝐬: <code>{}</code>
 ★ 𝐓𝐨𝐭𝐚𝐥 𝐔𝐬𝐞𝐫𝐬: <code>{}</code>
-★ 𝐓𝐨𝐭𝐚𝐥 𝐂𝐡𝐚𝐭𝐬: <code>{}</code>
 ★ 𝐔𝐬𝐞𝐝 𝐒𝐭𝐨𝐫𝐞𝐠𝐞: <code>{}</code> 𝙼𝚒𝙱
 ★ 𝐅𝐫𝐞𝐞 𝐒𝐭𝐨𝐫𝐚𝐠𝐞: <code>{}</code> 𝙼𝚒𝙱
-𝐈𝐟 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 𝐘𝐨𝐮𝐫 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐌𝐨𝐯𝐢𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐓𝐡𝐚𝐧 𝐀𝐝𝐝 𝐘𝐨𝐮𝐫 𝐌𝐨𝐯𝐢𝐞𝐬 𝐅𝐢𝐥𝐞 𝐈𝐧 𝐁𝐨𝐭
-  𝐆𝐨 𝐁𝐚𝐜𝐤 𝐀𝐧𝐝 𝐂𝐡𝐞𝐜𝐤 𝐀𝐮𝐭𝐨 𝐅𝐢𝐥𝐭𝐞𝐫"""
+""
     LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>)
 Total Members = <code>{}</code>
@@ -121,19 +117,7 @@ Please Sean The Request Again."""
     CUDNT_FND = """ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏᴛʜɪɴɢ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ {}
 ᴅɪᴅ ʏᴏᴜ ᴍᴇᴀɴ ᴀɴʏ ᴏɴᴇ ᴏꜰ ᴛʜᴇꜱᴇ?"""
 
-    I_CUDNT = """<b>Sorry No Files Were Found For Your Request {} 😕
-
-Check Your Spelling In Google And Try Again 😃
-
-Movie Request Format 👇
-
-Example : Uncharted or Uncharted 2022 or Uncharted En
-
-ꜱᴇʀɪᴇꜱ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ 👇
-
-Example : Loki S01 or Loki S01E04 or Lucifer S03E24
-
-🚯 Don't Use ➠ ':(!,./)</b>"""
+    I_CUDNT = """<b>Sorry</b>"""
 
     I_CUD_NT = """I Counldn't Find Your Movie {}.
 Please Check Your Spelling On Google..."""
@@ -187,16 +171,7 @@ Example : Loki S01E01
 
     CAPTION = """
 <b>📂 Fɪʟᴇ ɴᴀᴍᴇ : </b> <code>{file_name}</code>
-
-<b>
-╭─────── • ◆ • ───────╮
-🔅 Dᴀʀᴋ Mᴏᴅᴇ :  <a href="https://t.me/addtheme/DQ_The_File_Donor_Theme">Tᴏᴜᴄʜ</a>
-╰─────── • ◆ • ───────╯
-
-=========== • ✠ • ===========
-▫️ ᴄʜᴀɴɴᴇʟ : @DQ_The_File_Donor_Bot_Updates
-▫️ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ : @DQ_The_File_Donor_Support
-=========== • ✠ • ===========</b>"""
+"""
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {query}
