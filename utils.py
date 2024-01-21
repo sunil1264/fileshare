@@ -502,6 +502,8 @@ async def get_shortlink(chat_id, link):
                 return f'https://{URL}/api?api={API}&link={link}'
 
 async def get_filelink(link):
+    URL = SHORTLINK_URL
+    API = SHORTLINK_API
     https = link.split(":")[0] #splitting https or http from link
     if "http" == https: #if https == "http":
         https = "https"
