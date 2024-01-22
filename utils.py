@@ -687,7 +687,7 @@ async def get_token(bot, userid, link, fileid):
     time_var = status["time"]
     hour, minute, second = time_var.split(":")
     year, month, day = date_var.split("-")
-    last_date, last_time = str((datetime(year=int(year), month=int(month), day=int(day), hour=int(hour), minute=int(minute), second=int(second)))-timedelta(hours=25)).split(" ")
+    last_date, last_time = str((datetime(year=int(year), month=int(month), day=int(day), hour=int(hour), minute=int(minute), second=int(second)))-timedelta(hours=2)).split(" ")
     tz = pytz.timezone('Asia/Kolkata')
     curr_date, curr_time = str(datetime.now(tz)).split(" ")
     if last_date == curr_date:
@@ -796,7 +796,7 @@ async def verify_user(bot, userid, token):
         await bot.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(user.id, user.mention))
     TOKENS[user.id] = {token: True}
     tz = pytz.timezone('Asia/Kolkata')
-    date_var = datetime.now(tz)+timedelta(hours=25)
+    date_var = datetime.now(tz)+timedelta(hours=2)
     temp_time = date_var.strftime("%H:%M:%S")
     date_var, time_var = str(date_var).split(" ")
     await update_verify_status(user.id, date_var, temp_time)
