@@ -37,6 +37,7 @@ async def gen_link_s(bot, message):
     url=await get_filelink(f"https://telegram.dog/{temp.U_NAME}?start={outstr}")
     url2=await get_filelink2(f"https://telegram.dog/{temp.U_NAME}?start={outstr}")
     await message.reply(f"Here is your Link:\nhttps://t.me/{temp.U_NAME}?start={outstr} \n\n{url} \n\n{url2}")
+    await message.reply(f"Here is your Link:\nhttps://t.me/{temp.U_NAME}?start={outstr} \n{url2}")
     
     
     
