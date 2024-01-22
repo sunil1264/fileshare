@@ -22,18 +22,10 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
             InlineKeyboardButton('🔥Movie Channel🔥', url='https://t.me/+_zbzjL-nCYYzYTk1')
             ],[
             InlineKeyboardButton('❤️Backup Channel❤️', url='https://t.me/moviehub1751')
-            ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/SK_Movies1')
-            ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
-        ]]
+            ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
@@ -52,18 +44,10 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
             InlineKeyboardButton('🔥Movie Channel🔥', url='https://t.me/+_zbzjL-nCYYzYTk1')
             ],[
             InlineKeyboardButton('❤️Backup Channel❤️', url='https://t.me/moviehub1751')
-            ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/SK_Movies1')
-            ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
-         ]]
+            ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
@@ -95,25 +79,17 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton("🔄 Try Again", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**You Are Not In Our Update Channel Given Below So You Don't Get The Movies File...\n\nIf You Want The Movies File, Click On The '🤖 Join Updates Channel' Button Below And Join Our Update Channel, Then Click On The '🔄 Try Again' Button Below...\n\nThen You Will Get The Movies Files...**",
+            text="**You Are Not In Our Update Channel Given Below So You Don't Get The Movies File...\n\nIf You Want The File, Click On The '🤖 Join Updates Channel' Button Below And Join Our Update Channel, Then Click On The '🔄 Try Again' Button Below...\n\nThen You Will Get The Movies Files...**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
             InlineKeyboardButton('🔥Movie Channel🔥', url='https://t.me/+_zbzjL-nCYYzYTk1')
             ],[
             InlineKeyboardButton('❤️Backup Channel❤️', url='https://t.me/moviehub1751')
-            ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/SK_Movies1')
-            ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
-        ]]
+            ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
