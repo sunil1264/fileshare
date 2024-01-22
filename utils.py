@@ -605,8 +605,8 @@ async def get_filelink2(link):
 
 async def get_verify_shorted_link(num, link):
     if int(num) == 1:
-        API = SHORTLINK_API
-        URL = SHORTLINK_URL
+        API = SHORTLINK2_API
+        URL = SHORTLINK2_URL
     else:
         API = VERIFY2_API
         URL = VERIFY2_URL
