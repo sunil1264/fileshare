@@ -36,8 +36,9 @@ async def gen_link_s(bot, message):
     outstr = base64.urlsafe_b64encode(string.encode("ascii")).decode().strip("=")
     url=await get_filelink(f"https://telegram.dog/{temp.U_NAME}?start={outstr}")
     url2=await get_filelink2(f"https://telegram.dog/{temp.U_NAME}?start={outstr}")
-    await message.reply(f"Here is your Link:\nhttps://t.me/{temp.U_NAME}?start={outstr} \n\n{url} \n\n{url2}")
-    await message.reply(f"Here is your Link:\nhttps://t.me/{temp.U_NAME}?start={outstr} \n{url2}")
+    await message.reply(f"https://t.me/{temp.U_NAME}?start={outstr}")
+    await message.reply(f"{url}")
+    await message.reply(f"{url2}")
     
     
     
@@ -83,7 +84,9 @@ async def gen_link_batch(bot, message):
         b_64 = base64.urlsafe_b64encode(string.encode("ascii")).decode().strip("=")
         url=await get_filelink(f"https://telegram.dog/{temp.U_NAME}?start=DSTORE-{b_64}")
         url2=await get_filelink2(f"https://telegram.dog/{temp.U_NAME}?start=DSTORE-{b_64}")
-        return await sts.edit(f"Here is your link \nhttps://t.me/{temp.U_NAME}?start=DSTORE-{b_64} \n\n{url} \n\n{url2}")
+        return await sts.edit(f"https://t.me/{temp.U_NAME}?start=DSTORE-{b_64}")
+        await message.reply(f"{url}")
+        await message.reply(f"{url2}")
 
     FRMT = "Generating Link...\nTotal Messages: `{total}`\nDone: `{current}`\nRemaining: `{rem}`\nStatus: `{sts}`"
 
@@ -130,4 +133,6 @@ async def gen_link_batch(bot, message):
     file_id, ref = unpack_new_file_id(post.document.file_id)
     url=await get_filelink(f"https://telegram.dog/{temp.U_NAME}?start=BATCH-{file_id}")
     url2=await get_filelink2(f"https://telegram.dog/{temp.U_NAME}?start=BATCH-{file_id}")
-    await sts.edit(f"Here is your link\nContains `{og_msg}` files.\n https://t.me/{temp.U_NAME}?start=BATCH-{file_id} \n\n{url} \n\n{url2}")
+    await sts.edit(f"Here is your link\nContains `{og_msg}` files.\n https://t.me/{temp.U_NAME}?start=BATCH-{file_id}")
+    await message.reply(f"{url}")
+    await message.reply(f"{url2}")
